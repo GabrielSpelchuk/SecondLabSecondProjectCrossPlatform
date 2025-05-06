@@ -18,4 +18,17 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "store_id")
     private Store store;
+
+    public String getName() {
+        return name;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public Store getStore() {
+        return store;
+    }
+
 }

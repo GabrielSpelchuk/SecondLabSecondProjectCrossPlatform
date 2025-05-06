@@ -19,4 +19,13 @@ public class Store {
 
     @OneToMany(mappedBy = "store", cascade = CascadeType.ALL)
     private List<Product> products;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
 }
